@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="RuneUnitData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unit_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "ranger"
+display_name = "Ranger"
+max_health = 85.0
+attack_damage = 17.0
+move_speed = 2.7
+attack_range = 5.0
+attack_interval = 1.35
+heal_amount = 0.0
+heal_range = 4.0
+attack_candidates = PackedStringArray("Bow_Shoot", "Bow_Attack", "Shoot", "Attack", "Attack1", "Staff_Attack")

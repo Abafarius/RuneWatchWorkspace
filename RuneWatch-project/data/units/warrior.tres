@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="RuneUnitData" load_steps=2 format=3 uid="uid://dpuhyolhmbvj4"]
+
+[ext_resource type="Script" uid="uid://dx8kulc7hc4aj" path="res://scripts/unit_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "warrior"
+display_name = "Warrior"
+max_health = 150.0
+attack_damage = 24.0
+move_speed = 2.6
+attack_range = 1.6
+attack_interval = 1.5
+hit_delay = 0.4
+attack_lock_time = 0.9
+heal_amount = 0.0
+heal_range = 4.0
+feedback_height = 3.7
+visual_scale = 1.0
+visual_y_offset = 0.0
+visual_yaw_degrees = 0.0
+attack_animation = ""
+attack_candidates = PackedStringArray("Sword_Attack", "Attack", "Attack1", "Staff_Attack", "Punch")
+heal_animation = "Spell1"
+use_default_effects = true
+effect_ids = null

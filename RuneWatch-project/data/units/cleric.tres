@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="RuneUnitData" load_steps=2 format=3 uid="uid://dhmtecqp6dqav"]
+
+[ext_resource type="Script" uid="uid://dx8kulc7hc4aj" path="res://scripts/unit_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "cleric"
+display_name = "Cleric"
+max_health = 110.0
+attack_damage = 10.0
+move_speed = 2.3
+attack_range = 3.5
+attack_interval = 2.0
+hit_delay = 0.4
+attack_lock_time = 0.9
+heal_amount = 35.0
+heal_range = 4.5
+feedback_height = 3.7
+visual_scale = 1.0
+visual_y_offset = 0.0
+visual_yaw_degrees = 0.0
+attack_animation = ""
+attack_candidates = PackedStringArray("Staff_Attack", "Attack", "Punch", "Spell2")
+heal_animation = "Spell1"
+use_default_effects = true
+effect_ids = null

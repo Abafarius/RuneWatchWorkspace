@@ -1,0 +1,1 @@
+Copy original Quaternius glTF files and all dependencies here. Expected names: Warrior.gltf, Ranger.gltf, Wizard.gltf (or Wizard2.gltf), Cleric.gltf. GLB also supported. If names differ, assign Model Scene in data/units/*.tres.

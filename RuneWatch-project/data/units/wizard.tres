@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="RuneUnitData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/unit_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "wizard"
+display_name = "Wizard"
+max_health = 95.0
+attack_damage = 28.0
+move_speed = 2.2
+attack_range = 4.4
+attack_interval = 2.1
+heal_amount = 0.0
+heal_range = 4.0
+attack_candidates = PackedStringArray("Spell1", "Spell2", "Staff_Attack")

@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://d1dubth7sgaev"]
+
+[ext_resource type="Script" uid="uid://bhjj5g1pl7nw3" path="res://scripts/main.gd" id="1"]
+
+[sub_resource type="StandardMaterial3D" id="GroundMaterial"]
+albedo_color = Color(0.443, 0.522, 0.408, 1)
+
+[sub_resource type="BoxMesh" id="GroundMesh"]
+material = SubResource("GroundMaterial")
+size = Vector3(16, 0.5, 10)
+
+[sub_resource type="Environment" id="WorldEnv"]
+background_mode = 1
+background_color = Color(0.149, 0.22, 0.227, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.835, 0.886, 0.949, 1)
+ambient_light_energy = 0.5
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1")
+
+[node name="Ground" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+mesh = SubResource("GroundMesh")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.939693, -0.21524, 0.2658, 0, 0.777146, 0.62932, -0.34202, -0.591368, 0.730278, 5, 12, 14)
+projection = 1
+current = true
+size = 14.0
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.866025, 0.409576, -0.286788, 0, 0.573576, 0.819152, 0.5, -0.709406, 0.496732, 0, 0, 0)
+light_energy = 1.2
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("WorldEnv")
