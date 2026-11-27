@@ -1,11 +1,13 @@
-[gd_resource type="Resource" script_class="RuneUnitData" load_steps=2 format=3 uid="uid://dhmtecqp6dqav"]
+[gd_resource type="Resource" script_class="RuneUnitData" load_steps=3 format=3 uid="uid://dhmtecqp6dqav"]
 
 [ext_resource type="Script" uid="uid://dx8kulc7hc4aj" path="res://scripts/unit_data.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://cebnkph8hllmc" path="res://assets/models/characters/Cleric.gltf" id="1_w8ueg"]
 
 [resource]
 script = ExtResource("1")
 id = "cleric"
 display_name = "Cleric"
+model_scene = ExtResource("1_w8ueg")
 max_health = 110.0
 attack_damage = 10.0
 move_speed = 2.3

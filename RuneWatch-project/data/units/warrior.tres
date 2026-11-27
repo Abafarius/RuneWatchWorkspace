@@ -1,11 +1,13 @@
-[gd_resource type="Resource" script_class="RuneUnitData" load_steps=2 format=3 uid="uid://dpuhyolhmbvj4"]
+[gd_resource type="Resource" script_class="RuneUnitData" load_steps=3 format=3 uid="uid://dpuhyolhmbvj4"]
 
 [ext_resource type="Script" uid="uid://dx8kulc7hc4aj" path="res://scripts/unit_data.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://b7oyneikio8xs" path="res://assets/models/characters/Warrior.gltf" id="1_0ka7x"]
 
 [resource]
 script = ExtResource("1")
 id = "warrior"
 display_name = "Warrior"
+model_scene = ExtResource("1_0ka7x")
 max_health = 150.0
 attack_damage = 24.0
 move_speed = 2.6
